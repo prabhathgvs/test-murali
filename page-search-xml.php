@@ -28,6 +28,14 @@ if ($post_data) {
                                 'heading' => $post_data['note']
                 );
 }
+if ($put_data) {
+        $pkey = $_POST['id'];
+        $data[$pkey] = array(
+                                'to' => $put_data['to'],
+                                'from' => $put_data['from'],
+                                'heading' => $put_data['note']
+                        );
+}
 //print_r($data);
 foreach ($data as $key => $item) {
         $track = $xml->addChild('note');
