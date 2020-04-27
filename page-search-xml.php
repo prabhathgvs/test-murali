@@ -10,13 +10,13 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
 }
 $xml = new SimpleXMLElement('<notes/>');
 $data = array( 'pbk' => array(
-        'to' => 'prabhath',
-        'from' => 'murali',
+        'to' => 'Name1',
+        'from' => 'Name2',
         'heading' => 'This is a note'
 ),
 'kmk' => array(
-        'to' => 'ishaan',
-        'from' => 'pratibha',
+        'to' => 'Name3',
+        'from' => 'Name4',
         'heading' => 'hello'
 )
 );
